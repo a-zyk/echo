@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bluznis</title>
+    <link rel="stylesheet" href="/echo.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="grid">
+      <!-- forma -->
+      <div class="main-collumn">
+        <form action="" class="form">
+          <h2>Blužnis</h2>
+          <div class="question">
+            <p>Blužnies parenchima yra:</p>
+
+            <label
+              ><input
+                class="form-check-input"
+                type="radio"
+                name="spleen"
+                id="homogenic"
+                value="homogeniška"
+              />
+              Homogeniška</label
+            >
+            <label
+              ><input
+                class="form-check-input"
+                type="radio"
+                name="spleen"
+                id="homogenic"
+                value="heterogeniška"
+              />
+              Heterogeniška</label
+            >
+          </div>
+
+          <div class="question">
+            <p>Blužnies parenchima lyginant su kepenimis yra:</p>
+
+            <label
+              ><input
+                class="form-check-input"
+                type="radio"
+                name="spleentoliver"
+                id="izoechogeniska"
+                value="izoechogeniška"
+              />
+              izoechogeniška</label
+            >
+
+            <label
+              ><input
+                class="form-check-input"
+                type="radio"
+                name="spleentoliver"
+                id="hipoechogeniska"
+                value="hipoechogeniška"
+              />
+              hipoechogeniška</label
+            >
+
+            <label
+              ><input
+                class="form-check-input"
+                type="radio"
+                name="spleentoliver"
+                id="hiperechogeniska"
+                value="hiperechogeniška"
+              />
+              hiperechogeniška</label
+            >
+          </div>
+
+          <div class="question">
+            <p>Blužnies kraštai yra:</p>
+
+            <label
+              ><input
+                class="form-check-input"
+                type="radio"
+                name="spleenCorner"
+                id="sharp"
+                value="aštrūs"
+              />
+              Aštrūs</label
+            >
+            <label
+              ><input
+                class="form-check-input"
+                type="radio"
+                name="spleenCorner"
+                id="blunt"
+                value="suapvalėję"
+              />
+              Suapvalėję</label
+            >
+          </div>
+
+          <!-- Text area -->
+          <div class="question">
+            <label for="text-area">
+              Kiti pakitimai
+              <textarea
+                name="textArea"
+                id="text-area"
+                class="form-control"
+                placeholder="Kiti pakitimai: masės, mineralizacijos..."
+                rows="4"
+                cols="40"
+              ></textarea>
+            </label>
+          </div>
+          <!-- Text area end -->
+
+          <div class="bothBtns">
+            <input
+              type="submit"
+              name="submit"
+              value="Submit"
+              class="btnSubmit"
+            />
+            <button class="clear" type="reset">Clear</button>
+          </div>
+        </form>
+        <p class="text"></p>
+      </div>
+      <!-- forma end -->
+
+      <!-- speros  -->
+
+      <div class="second-collumn">
+        <div class="section">
+          <div class="section-name">
+            <h2>Normali blužnis</h2>
+          </div>
+          <div class="section-text">
+            <img src="normalibluzniskate.png" alt="normal-spleen" />
+            <p>
+              Blužnis yra pailgas organas esantis kairėju kūno pusėje. Galimos
+              kelios blužnies padėtys – išilgai pilvo sienos, kaudalinis kraštas
+              beveik siekia šlapimo pūslę arba L formos, kai blužnies kūnas
+              lenkiasi ties skrandžiu ir kairiu inkstu. Blužnies parenchima yra
+              homogeniška ir padengta plona hiperechoiška kapsule. Pas šunis -
+              lyginant su kepenimis ir inksto žieve blužnis yra hiperechoiška.
+              Pas kates – hiperechoiška kepenims, izoechoiška arba lengvai
+              hiperechoiška inksto žievei. Blužnies kraujagyslės suformuoja
+              „banginio uodegą“ ties blužnies vartais (hilus). Blužnies dydis
+              vertinamas subjektyviai. Dažnai pagal suapvalėjusius kraštus. Kai
+              kuriuose šaltiniuose nurodomas normalus kačių blužnies plotis ties
+              hilus yra iki 1cm. Blužnies užsilenkimas per pusę gali indikuoti
+              splenomegaliją. Blužnis gali didėti dėl anestetikų poveikio.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-name">
+            <h2>Splenomegalija</h2>
+          </div>
+          <div class="section-text">
+            <div class="subsection">
+              <div class="subsection-name">
+                <h3>Splenomegalija su normaliu echogeniškumu</h3>
+              </div>
+              <div class="subsection-text">
+                <figure>
+                  <img
+                    src="bluzniesuzsisukimas.png"
+                    alt="bluznies-uzsisukimas"
+                  />
+                  <figcaption>Šuo, blužnies užsisukimas</figcaption>
+                </figure>
+
+                <p>
+                  Blužnis dažnai didėja, bet išlieka normalaus echogeniškumo dėl
+                  sedacijos su acepromazinu, diazepamu, ketaminu. Dėl kylančio
+                  spaudimo ir kraujotakos sutrikimų prie dešnės pusės širdies
+                  nepakankamumo, kepenų hipertenzijos, blužnies užsisukimo,
+                  blužnies venų trombozės. Taip pat dėl ekstramedulinės
+                  hematopoezės bei infiltruojančių neoplazijų pvz. limfoma ar
+                  mastocitoma.
+                </p>
+              </div>
+            </div>
+
+            <div class="subsection">
+              <div class="subsection-name">
+                <h3>Splenomegalija su pakitusiu echogeniškumu</h3>
+              </div>
+              <div class="subsection-text">
+                <figure>
+                  <img src="limfomabluznissuo.png" alt="bluznies-limfoma" />
+                  <figcaption>Šuo, limfoma</figcaption>
+                </figure>
+                <p>
+                  Bičių korį ar kandžių išėstą audinį primenantis echogeniškumas
+                  dažnai būna prie blužnies limfomos. Difuzinis
+                  hipoechogeniškumas, su hiperechoiškomis trumpomis linijomis (
+                  kolapsavusios kraujagyslės) matomas prie blužnies užsisukimo.
+                  Hipoechogeniška parenchima gali būti prie ekstramedulinės
+                  hematopoezės, gerybinės limfoidinės hiperplazijos (dėl
+                  uždegimo), infekcijos, infarktų ir infiltracinių neoplazijų.
+                  FNA rekomenduojama tikslesnei diagnozei.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-name">
+            <h2>Lokalūs parenchimos pakitimai</h2>
+          </div>
+          <div class="section-text">
+            <figure>
+              <img src="mielolipoma.png" alt="mielolipoma" />
+              <figcaption>Mielolipomos, šuo.</figcaption>
+            </figure>
+            <p>
+              Smarkiai hipoechoiški darniai lokalizuoti ties blužnies
+              mezenteriniu dažnai būna gerybinės mielolipomos, dažnai randamos
+              pas vyresnio amžiaus šunis ir kates. Hipoechoiški dariniai gali
+              būti gerybiniai: hematomos, gerybinė mazgelinė hiperplazija
+              (benign nodular hyperplasia) ir piktybiniai: hemangiosarkoma,
+              kitos sarkomos, mastocitomos, histiocitomos ar metastazės.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-name">
+            <h2>Hemangiosarkoma ir hematoma</h2>
+          </div>
+          <div class="section-text">
+            <figure>
+              <img src="hemangiosarkoma.png" alt="hemangiosarkoma" />
+              <figcaption>Šuo, hemangiosarkoma.</figcaption>
+            </figure>
+            <p>
+              Auglys kylantis iš iš kraujagyliu endotelio. Dažnesnis pas
+              vyresnio amžiaus, didelių veislių šunis. Predisponuoti vokiečių
+              aviganiai, auksaspalviai retriveriai, labradorai ir šnauceriai.
+              Iki 25% šunų su hemangiosarkoma blužnyje turi metastazes
+              dešniajame prieširdyje. Ši neoplazija linkusi metastazuoti į
+              plaučius, inkstus, kepenis. Echoskopu hemangiosarkoma matoma kaip
+              mišrasu echogeniškumo masė. FNA mažai vertinga, nes
+              hemangiosarkomos nelinkusios atiduoti lastelių, didelės kraujavimo
+              bei išsėjimo rizikos. Hematomas sudaro kraujas ir fibrinas.
+              Didelės hematmos gali suardyti kapsulę. Galimas kraujavimas į
+              pilvą, bet žymiai rečiau nei prie hemangiosarkomų. Hematomos gali
+              kilti ir iš suvežėjusio audinio. Diferencijacijai būtinas
+              histologinis tyrimas, nes abi būklės echoskopiniame tyrime gali
+              atrodyti vienodai, o fna yra nediagnostinis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- speros end -->
+    </div>
+    <script src="spleen.js"></script>
+    <script src="/sidebar.js"></script>
+  </body>
+</html>

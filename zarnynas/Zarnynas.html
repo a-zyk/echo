@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Žarnynas</title>
+
+    <link rel="stylesheet" href="/echo.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="grid">
+      <!-- forma -->
+      <div class="main-collumn">
+        <form action="" class="form">
+          <H2>Žarnynas</H2>
+
+          <!-- <div class="form-flex"> -->
+            <!-- skrandzio parametrai start -->
+            <!-- <div class="card-container">
+
+              <div class="question">
+                <p>Skrandžio prisipildymas yra:</p>
+
+                <label
+                  ><input
+                    class="form-check-input"
+                    type="radio"
+                    name="stomach-size"
+                    id="empty"
+                    value="tusčias"
+                  />
+                  Tusčias</label
+                >
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="stomach-size"
+                    id="half-full"
+                    value="vidutinis"
+                  />
+                  Vidutinis
+                </label>
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="stomach-size"
+                    id="full"
+                    value="perpildytas"
+                    checked
+                  />
+                  Perpildytas
+                </label>
+              </div>
+
+              <div class="question">
+                <label for="stomach-wall-width">
+                  Skrandžio sienelės storis, cm
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="stomach-wall-width"
+                  name="stomach-wall-width"
+                  min="0.0"
+                  max="50.0"
+                />
+              </div>
+
+              <div class="question">
+                <p>Skrandžio sienelės sluoksniai:</p>
+
+                <label
+                  ><input
+                    class="form-check-input"
+                    type="radio"
+                    name="stomach-wall"
+                    id="wall-layer-clear"
+                    value="aiškiai identifikuojami"
+                  />
+                  Skrandžio sienelės sluoksniai aiškiai identifikuojami</label
+                >
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="stomach-wall"
+                    id="wall-layer-unclear"
+                    value="identifikuoti sudėtinga"
+                  />
+                  Skrandžio sienelės sluoksnius identifikuoti sudėtinga
+                </label>
+              </div>
+
+              <div class="question">
+                <p>Skrandžio sienelė pylorus srityje:</p>
+
+                <label
+                  ><input
+                    class="form-check-input"
+                    type="radio"
+                    name="pylorus-width"
+                    id="pylorus-width-norm"
+                    value="nesustorėjusi"
+                  />
+                  Nesustorėjusi</label
+                >
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="pylorus-width"
+                    id="pylorus-width-thick"
+                    value="sustorėjusi"
+                  />
+                  Sustorėjusi
+                </label>
+              </div>
+
+              <div class="question">
+                <label for="pylorus-wall-width">
+                  Skrandžio sienelės ties pylorus storis, cm
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="pylorus-wall-width"
+                  name="pylorus-wall-width"
+                  min="0.0"
+                  max="50.0"
+                />
+              </div>
+
+              <div class="question">
+                <label for="peristalsis"
+                  >Skrandžio peristaltika pylorus srityje, k/min
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="peristalsis"
+                  name="peristalsis"
+                  min="0"
+                  max="50"
+                />
+              </div>
+
+              <div class="question">
+                <label for="stomach-text-area">
+                  Kiti pakitimai
+                  <textarea
+                    name="stomachTextArea"
+                    id="stomach-text-area"
+                    class="form-control"
+                    placeholder="Kiti pakitimai:masės, svetimkūniai..."
+                    rows="4"
+                    cols="40"
+                  ></textarea>
+                </label>
+              </div>
+
+            </div> -->
+            <!-- skrandzio parametrai end-->
+
+            <!-- zarnyno parametrai start -->
+            <div class="card-container">
+
+              <div class="small-containers-grid">
+              <div class="question">
+                <label for="duodenum-wall-width">
+                  Dvylikapirštės žarnos sienelės storis, cm
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="duodenum-wall-width"
+                  name="pylorus-wall-width"
+                  min="0.0"
+                  max="50.0"
+                />
+              </div>
+
+              <div class="question">
+                <label for="duodenum-text-area">
+                  Kiti pakitimai
+                  <textarea
+                    name="duodenumTextArea"
+                    id="duodenum-text-area"
+                    class="form-control"
+                    placeholder="Kiti pakitimai: atskiru sluoksniu sustorėjimai, dariniai, turinys, svetimkūniai."
+                    rows="4"
+                    cols="40"
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+
+            <div class="small-containers-grid">
+              <div class="question">
+                <label for="jejunum-wall-width">
+                  Tusčiosios žarnos sienelės storis, cm
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="jejunum-wall-width"
+                  name="jejunum-wall-width"
+                  min="0.0"
+                  max="50.0"
+                />
+              </div>
+
+              <div class="question">
+                <label for="jejunum-text-area">
+                  Kiti pakitimai
+                  <textarea
+                    name="jejunumTextArea"
+                    id="jejunum-text-area"
+                    class="form-control"
+                    placeholder="Kiti pakitimai: atskiru sluoksniu sustorėjimai, dariniai, turinys, svetimkūniai."
+                    rows="4"
+                    cols="40"
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+
+
+<div class="small-containers-grid">
+              <div class="question">
+                <label for="ileum-wall-width">
+                  Aklosios žarnos sienelės storis ties ileocekaline jungtimi, cm
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="ileum-wall-width"
+                  name="ileum-wall-width"
+                  min="0.0"
+                  max="50.0"
+                />
+              </div>
+
+              <div class="question">
+                <label for="ileum-text-area">
+                  Kiti pakitimai
+                  <textarea
+                    name="ileumTextArea"
+                    id="ileum-text-area"
+                    class="form-control"
+                    placeholder="Kiti pakitimai: atskiru sluoksniu sustorėjimai, dariniai, turinys, svetimkūniai."
+                    rows="4"
+                    cols="40"
+                  ></textarea>
+                </label>
+              </div>
+</div>
+
+<div class="small-containers-grid">
+              <div class="question">
+                <label for="cecum-wall-width">
+                  Storosios žarnos sienelės storis, cm
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="cecum-wall-width"
+                  name="cecum-wall-width"
+                  min="0.0"
+                  max="50.0"
+                />
+              </div>
+
+              <div class="question">
+                <label for="cecum-text-area">
+                  Kiti pakitimai
+                  <textarea
+                    name="cecumTextArea"
+                    id="cecum-text-area"
+                    class="form-control"
+                    placeholder="Kiti pakitimai: atskiru sluoksniu sustorėjimai, dariniai, turinys, svetimkūniai."
+                    rows="4"
+                    cols="40"
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+            </div>
+            <!-- zarnyno parametrai end -->
+
+          <!-- </div> -->
+
+          <div class="bothBtns">
+            <input
+              type="submit"
+              name="submit"
+              value="Submit"
+              class="btnSubmit"
+            />
+            <button class="clear" type="reset">Clear</button>
+  </div>
+
+        </form>
+        <p class="text"></p>
+      </div>
+      <!-- forma end -->
+
+      <!-- speros  -->
+
+      <div class="second-collumn">
+
+        <div class="section">
+            <div class="section-name">
+              <h2>Normalus inkstas</h2>
+            </div>
+            <div class="section-text">
+              <img src="normalkidney.png" alt="normal-kidney" />
+              <p>
+                Kačių inkstai yra dažniausiai ovalios formos apie 3 – 4,5 cm.
+                Nekastruotų patinų inkstai linkę būti didesni. Į senatvę kačių
+                inkstai mažėja. Šerdis yra hipoechoiška žievei. Žievės šerdies
+                riba turi būti gerai išreikšta. (corticomedullary distinction.)
+                Kortikomedularinėje dalyje yra arkinės kraujagyslės, kurios gali
+                mesti akustinį šešėlį ir turi būti diferencijuojamos nuo
+                kalcifikacijos spalviniu dopleriu. Žievė yra
+                hipoechoiška/izoechoiška kepenims ir hipoechoiška blužniai. Žievė
+                gali būti hiperechoiška kepenims dėl didesnio kiekio riebalų, kas
+                yra norma katėms. Inksto kapsulė turi būti lygi hiperechogeniška
+                linija. Geldelė gali būti vizualizuojama skersiniame pjūvyje ir
+                gali padidėti dėl intraveninės skysčių terapijos ar diuretikų
+                naudojimo.Aplink geldelę yra inksto sinusas, kuris vizualizuojama
+                kaip hiperechoiška struktūra. Pas nutukusias kates itin ryškus.
+              </p>
+            </div>
+          </div>
+
+      </div>
+      <!-- speros end -->
+    </div>
+  </body>
+</html>

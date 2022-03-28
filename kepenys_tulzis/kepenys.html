@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kepenys ir tulzies pusle</title>
+    <link rel="stylesheet" href="/echo.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="grid">
+      <!-- forma start -->
+      <div class="main-collumn">
+        <form action="" class="form">
+          <div class="form-flex">
+            <!-- kepenu klausimai start -->
+            <div class="liver">
+              <h2>Kepenys</h2>
+
+              <div class="question">
+                <p>Kepenų parenchima yra:</p>
+
+                <label
+                  ><input
+                    class="form-check-input"
+                    type="radio"
+                    name="liverParenchyma"
+                    id="homogenic"
+                    value="homogeniška"
+                  />
+                  Homogeniška</label
+                >
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="liverParenchyma"
+                    id="heterogenic"
+                    value="heterogeniška"
+                  />
+                  Heterogeniška
+                </label>
+              </div>
+
+              <div class="question">
+                <p>
+                  Lyginant su blužnimi kepenų prenchimos echogeniškumas yra:
+                </p>
+
+                <label
+                  ><input
+                    class="form-check-input"
+                    type="radio"
+                    name="liverSpleen"
+                    id="hipoechogenic"
+                    value="hipoechogeniška"
+                  />
+                  Hipoechogeniškas</label
+                >
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="liverSpleen"
+                    id="izoechogeniška"
+                    value="izoechogeniška"
+                  />
+                  Izoechogeniškas
+                </label>
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="liverSpleen"
+                    id="hiperechogeniška"
+                    value="hiperechogeniška"
+                  />
+                  Hiperechogeniškas
+                </label>
+              </div>
+
+              <div class="question">
+                <p>Kepenų skilčių kraštai yra:</p>
+
+                <label
+                  ><input
+                    class="form-check-input"
+                    type="radio"
+                    name="liverTips"
+                    id="sharp"
+                    value="aštrūs"
+                  />
+                  Aštrūs
+                </label>
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="liverTips"
+                    id="rounded"
+                    value="suapvalėję"
+                  />
+                  Suapvalėję
+                </label>
+              </div>
+
+              <div class="question">
+                <p>Kepenų kraujagyslės:</p>
+
+                <label
+                  ><input
+                    class="form-check-input"
+                    type="radio"
+                    name="liverVasc"
+                    id="normal"
+                    value="neprasiplėtusios"
+                  />
+                  Neprasiplėtusios
+                </label>
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="liverVasc"
+                    id="dilatated"
+                    value="prasiplėtusios"
+                  />
+                  Prasiplėtusios
+                </label>
+              </div>
+
+              <!-- Text area -->
+              <div class="question">
+                <label for="text-area">
+                  Kiti pakitimai
+                  <textarea
+                    name="liverTextArea"
+                    id="liver-text-area"
+                    class="form-control"
+                    placeholder="Kiti pakitimai: masės, mineralizacjos..."
+                    rows="4"
+                    cols="40"
+                  ></textarea>
+                </label>
+              </div>
+              <!-- Text area end -->
+            </div>
+            <!-- kepenu klausimai end -->
+            <!-- tulzies kl start -->
+            <div class="gallbladder">
+              <h2>Tulžies pūslė ir bendrasis latakas</h2>
+              <div class="question">
+                <p>Tulžies pūslės sienelė:</p>
+
+                <label
+                  ><input
+                    class="form-check-input"
+                    type="radio"
+                    name="wall"
+                    id="normal"
+                    value="nesustorėjusi"
+                  />
+                  Nesustorėjusi
+                </label>
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="wall"
+                    id="thick"
+                    value="sustorėjusi"
+                  />
+                  Sustorėjusi
+                </label>
+              </div>
+
+              <!-- storis cm start -->
+
+              <div class="question">
+                <label for="gallbladder-wall-thickness">
+                  Tulžies pūslės sienelės storis, cm
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="gallbladder-wall-thickness"
+                  name="gallBladderWallThickness"
+                  min="0.0"
+                  max="50.0"
+                />
+              </div>
+              <!-- storis cm end -->
+
+              <div class="question">
+                <p>Bendrasis tulžies puslės latakas:</p>
+
+                <label
+                  ><input
+                    class="form-check-input"
+                    type="radio"
+                    name="ductus"
+                    id="ductus"
+                    value="neprasiplėtęs"
+                  />
+                  Neprasiplėtęs
+                </label>
+
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ductus"
+                    id="ductis"
+                    value="prasiplėtęs"
+                  />
+                  Prasiplėtęs
+                </label>
+              </div>
+
+              <!-- plotis cm start -->
+
+              <div class="question">
+                <label for="kidney-length">
+                  Bendrojo tulžies latako skersmuo, cm
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="gall-ductus-width"
+                  name="gallDuctusWallWidth"
+                  min="0.0"
+                  max="50.0"
+                />
+              </div>
+              <!-- plotis cm end -->
+
+              <!-- Text area -->
+              <div class="question">
+                <label for="text-area">
+                  Kiti pakitimai
+                  <textarea
+                    name="gTextArea"
+                    id="gText-area"
+                    class="form-control"
+                    placeholder="Kiti pakitimai: masės, prisipildymas, cholelitai..."
+                    rows="4"
+                    cols="40"
+                  ></textarea>
+                </label>
+              </div>
+              <!-- Text area end -->
+            </div>
+            <!-- tulzies kl end -->
+          </div>
+
+          <div class="bothBtns">
+            <input
+              type="submit"
+              name="submit"
+              value="Submit"
+              class="btnSubmit"
+            />
+            <button class="clear" type="reset">Clear</button>
+          </div>
+        </form>
+        <p class="text"></p>
+
+      </div>
+      <!-- forma end -->
+
+      <!-- speros start -->
+      <div class="second-collumn">
+        <div class="section">
+          <div class="section-name">
+            <h2>Normalios kepenys</h2>
+          </div>
+          <div class="section-text">
+            <img src="normalliver.png" alt="normal-liver" />
+            <p>
+              Didžioji dalis kepenų lokalizuota po šonkauliu lanku. Kairioji
+              skiltis yra didžiausia ir suformuoja nuo trečdalio iki pusės visų
+              kepenų. Kairioji skiltis savo kraštu liečią tulžies pūslę.
+              Kvadratinė skiltis yra centre ir dalinai apgaubia tulžies pūslę.
+              Dešinė tulžies pusės sienelė liečiasi su medialiniu dešniosios
+              medialinės skilties šonu. Uodeginės skilties uodeginė atauga
+              siekia dešnijį insktą.
+            </p>
+            <p>
+              Normali kepenų parenchima yra difuziškai hipoechoiška, su
+              šiurkštesne echotekstūra lyginant su blužnimi. Kepenų
+              echogeniškumas lyginant su inkstų žieve yra labiau varijuojantis,
+              bet dažniausiai hiperechoiškas/izoechoiškas. Kepenų kraštai yra
+              aštrūs, dėl hepatomegalijos gali apvalėti.
+            </p>
+            <p>
+              Falciforminis raištis yra sudarytas iš riebalinio audinio ir
+              lokalizuotas tarp dešnės ir kairės kepenų skilčių, dorsaliai
+              kardinei (xyphoid) krūtikaulio ataugai. Raiščio struktūra prastai
+              išreikšta, dažniausiai izoechoiška/hiperechoiška kepenų
+              parenchimai. Nutukusios katės gali turėti kepenis, kurios yra
+              hiperechoiškos lyginant su falciforminiu raiščiu.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-name">
+            <h2>Difuziniai kepenų parenchimos pakitimai</h2>
+          </div>
+          <div class="section-text">
+            <figure>
+              <img src="apvaluskepenukrastas.png" alt="rounded-tips-liver" />
+              <figcaption>
+                Apvalus kepenų kraštas indikuojantis hepatomegaliją
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="hepatokutaninissindromasfibrotineendstage.jpg"
+                alt="rounded-tips-liver"
+              />
+              <figcaption>
+                Bičių korio raštas, būdingas esant hepatokutaniniam sindromui.
+                Šuo, galutinės stadijos kepenų fibrozė.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="hiperechoiškoskepenys.png" alt="hyperechoic-liver" />
+              <figcaption>
+                Hiperechoiškos kepenys lyginant su blužnimi
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="hypoechoiclivervessels.png" alt="hypoechoic-liver" />
+              <figcaption>
+                Hipoechoiškos kepenys ir išryškėjusios kepenų kraujagyslių
+                sienelės.
+              </figcaption>
+            </figure>
+
+            <p>
+              Difuzinės kepenų ligos paveikia kepenų echogeniškumą bei didį.
+              Dauguma kepenų ligų sukelia simetrišką ar asimetrišką
+              hepatomegaliją, išskyrus portosisteminius šuntus, cirozę, chroninį
+              hepatitą. Padidėjusios kepenys be echogeniškumo pakitimo gali būti
+              dėl limfomos, diseminuotos mastocitomos, ūmaus hepatito.
+            </p>
+            <p>
+              Dažniausios diferencinės diagnozės prie hiperechogeniškumo:
+              steroidų sukelta hepatopatija, lipidozė,chroninis hepatitas,
+              fibrozė, cirozė, limfoma, mastocitoma. Hipoechogeniškumo: pasyvi
+              kraujo stazė, ūmus hepatitas, limfoma, leukemija, amiloidozė.
+            </p>
+          </div>
+        </div>
+
+        <div class="second-collumn">
+          <div class="section">
+            <div class="section-name">
+              <h2>Lokalizuoti kepenų parenchimos pakitimai</h2>
+            </div>
+
+            <div class="section-text">
+              <figure>
+                <img
+                  src="nodularhyperplasiasteroidhepatopathy.png"
+                  alt="nodular hyperplasia"
+                />
+                <figcaption>
+                  Mazgelinė hiperplazija ir steroidinė hepatopatija
+                </figcaption>
+              </figure>
+
+              <figure>
+                <img
+                  src="hepatoceliuliarinekarcinoma.png"
+                  alt="hepatocelular carcinoma"
+                />
+                <figcaption>
+                  Hepatocialiuriainė karcinoma. Dažnai būna >10cm.
+                  Rekomenduojamas chirurginis gydymas, nes nėra linkusi
+                  metaztazuoti.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <img src="targetlesions.png" alt="target lesions" />
+                <figcaption>
+                  "Taikinio" morfologijos dariniai. Metastazės.
+                </figcaption>
+              </figure>
+
+              <p>
+                Gerybiniai dariniai tokie kaip mazgelinė hiperplazija yra dažnas
+                radinys ypač vyresnio amžiaus šunims. Gerybinės kepenų adenomos
+                echoskopiškai negali būti diferencijuojamos nuo piktybinių
+                darinių, todėl reikalinga histologija arba fna.
+              </p>
+              <p>
+                Kepenys yra dažna metastazių vieta. Pirminiai kepenų augliai,
+                tokie kaip hepatoceluliarinė carcinoma yra daug retesni, nei
+                metastazės. “Taikinio” morfologiją turintys dariniai su
+                hiperechoišku centru ir hipoechoišku, dažnai yra metastazinės
+                kilmės. Piktybiniai dariniai dažnai būna >3cm, lydimi laisvo
+                skysčio pilvo ertmėje.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- speros end -->
+      </div>
+    </div>
+    <script src="kepenys.js"></script>
+    <script src="/sidebar.js"></script>
+  </body>
+</html>

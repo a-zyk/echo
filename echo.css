@@ -1,0 +1,116 @@
+/* my colors #c8d6e5 pilka sviesi
+pilka tamsi #8395a7
+ */
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.grid {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* Forma */
+/* 
+.first-collumn {
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+  line-height: 30px;
+} */
+
+.form {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+  line-height: 30px;
+}
+/* .form-flex {
+  display: flex;
+  
+} */
+
+.form-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.question {
+  margin: 10px;
+  border-bottom: 2px solid black;
+}
+
+.btnSubmit,
+.clear {
+  margin: 20px;
+  display: block;
+  padding: 0.5rem 2rem;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #c8d6e5;
+}
+
+.bothBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.small-containers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* textarea {
+  margin: 20px;
+  display: block;
+  max-width: 80%;
+} */
+/* Side bar su sperom */
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.section-name {
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+.section-name:hover {
+  background-color: #9ab2ca;
+}
+
+.subsection-name {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.subsection-name:hover {
+  background-color: #c8d6e5;
+}
+
+.section-text {
+  display: none;
+}
+
+.subsection-text {
+  display: none;
+}
+
+.subsection-textshow {
+  display: block;
+}
+
+.section-textshow {
+  display: block;
+  padding: 10px;
+}
