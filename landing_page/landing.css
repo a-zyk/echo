@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #ffd80042;
+    background-color: #e8ebf2;
     font-family: 'Amiri', serif;
 font-family: 'Poppins', sans-serif;
 
@@ -28,11 +28,11 @@ right: 0;
 
     font-size: 4vw;
     max-width: 550px;
-    color: #004090;
+    color: #584f53;
 }
 
 .hero-btn {
-    background-color: #cd54b7c4;
+    background-color: #eaa700;
     border: none;
     color: white;
     border-radius: 15px;
