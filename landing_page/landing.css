@@ -6,26 +6,28 @@ font-family: 'Poppins', sans-serif;
 
 }
 
-.main-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem  2rem;
+ .main-container {
+  display:flex;
+  justify-content: flex-start;
+  margin-top: 4em;
+  margin-left: 7em;
+  
 
-    
-}
+} 
 
 img {
-    max-width: auto; 
-    max-height: 450px;
-    border-radius: 300px;
+position: absolute;
+bottom: 0;
+right: 0; 
+  max-width: 100%px;
+  height: 100%;
+  z-index: 0;
 }
 
 .hero-text {
 
-    font-size: 2.7rem;
-    max-width: 500px;
-    margin-bottom: 3rem;
+    font-size: 4vw;
+    max-width: 550px;
     color: #004090;
 }
 
@@ -44,8 +46,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 5rem;
-
+   
+position: relative;
+z-index: 1;
 
 
 }
