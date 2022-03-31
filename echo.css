@@ -109,6 +109,10 @@ body {
 
 /* Side bar su sperom */
 
+.side-bar {
+  
+}
+
 img {
   width: 100%;
   max-width: 400px;
@@ -117,8 +121,9 @@ img {
 }
 
 .section-name {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid rgb(194, 189, 189);
   cursor: pointer;
+  
 }
 
 .section-name:hover {
