@@ -1,9 +1,11 @@
 
+
+
 let nav = document.getElementById("nav");
 
+let navHtml = '<ul> <li>  Šlapimo pūslė  </li> </ul>';
 
 
- nav.innerHTML = ' <li> pradzia </li>  '
-
+nav.innerHTML = navHtml;
 
 
