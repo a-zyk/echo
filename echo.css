@@ -43,6 +43,7 @@ grid-template-columns: 2fr 1fr;
   grid-template-columns: 1fr 1fr; */
   gap:15px;
   display:flex;
+  justify-content: center;
 }
 
 .question {
@@ -73,7 +74,8 @@ grid-template-columns: 2fr 1fr;
 
 .bothBtns {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 250px;
 }
 
 
