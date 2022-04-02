@@ -1,11 +1,14 @@
+const nav = document.getElementById("nav");
 
+fetch('/nav.html')
+    .then(resp => resp.text())
+    .then(data => {
+        nav.innerHTML = data;
 
-
-let nav = document.getElementById("nav");
-
-let navHtml = '<ul> <li>  Šlapimo pūslė  </li> </ul>';
-
-
-nav.innerHTML = navHtml;
-
-
+        const currentUrl = document.location.pathname;
+        const activeLink = nav.querySelector(`a[href="${currentUrl}"]`)
+        
+        if (activeLink) {
+            activeLink.parentNode.classList.add('active')
+        }
+    })
