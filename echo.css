@@ -107,10 +107,6 @@ grid-template-columns: 2fr 1fr;
   
 }
 
-.btn-card-width {
-  max-width: 500px;
-}
-
 .h-full {
   height:100%;
 }
@@ -132,18 +128,18 @@ img {
   
 }
 
-.section-name:hover {
+/* .section-name:hover {
   background-color: #9ab2ca;
-}
+} */
 
 .subsection-name {
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   cursor: pointer;
 }
 
-.subsection-name:hover {
+/* .subsection-name:hover {
   background-color: #c8d6e5;
-}
+} */
 
 .section-text {
   display: none;
