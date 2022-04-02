@@ -104,6 +104,7 @@ grid-template-columns: 2fr 1fr;
   box-shadow: -1px -5px 20px 0px #bebebe57;
   padding: 1em;
   gap: 15px;
+  margin-bottom: 10px;
   
 }
 
@@ -123,7 +124,7 @@ img {
 }
 
 .section-name {
-  border-bottom: 1px solid rgb(194, 189, 189);
+ 
   cursor: pointer;
   
 }
@@ -133,7 +134,7 @@ img {
 } */
 
 .subsection-name {
-  /* border-bottom: 1px solid black; */
+
   cursor: pointer;
 }
 
