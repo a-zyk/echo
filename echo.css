@@ -29,6 +29,7 @@ grid-template-columns: 2fr 1fr;
 .main-collumn {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .form {
@@ -49,6 +50,7 @@ grid-template-columns: 2fr 1fr;
   gap:15px;
   display:flex;
   justify-content: center;
+ 
 }
 
 .question {
