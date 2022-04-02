@@ -1,8 +1,7 @@
-const nav = document.getElementById("nav");
-
 fetch('/nav.html')
     .then(resp => resp.text())
     .then(data => {
+        const nav = document.getElementById("nav");
         nav.innerHTML = data;
 
         const currentUrl = document.location.pathname;
