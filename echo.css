@@ -28,7 +28,6 @@ grid-template-columns: 2fr 1fr;
 
 .main-collumn {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -112,7 +111,9 @@ grid-template-columns: 2fr 1fr;
   height:100%;
 }
 
-
+.second-collumn {
+  padding:20px;
+}
 /* Side bar su sperom */
 
 
