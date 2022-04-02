@@ -26,6 +26,11 @@ grid-template-columns: 2fr 1fr;
   line-height: 30px;
 } */
 
+.main-collumn {
+  display: flex;
+  justify-content: center;
+}
+
 .form {
   display: block;
   margin: 0 auto;
@@ -74,8 +79,7 @@ grid-template-columns: 2fr 1fr;
 
 .bothBtns {
   display: flex;
-  justify-content: center;
-  gap: 250px;
+  justify-content: space-between;
 }
 
 
@@ -99,6 +103,10 @@ grid-template-columns: 2fr 1fr;
   padding: 1em;
   gap: 15px;
   
+}
+
+.btn-card-width {
+  max-width: 500px;
 }
 
 .h-full {
