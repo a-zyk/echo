@@ -1,0 +1,19 @@
+
+
+#nav ul {
+    display: flex;
+ align-items: center;
+ justify-content: space-around;
+    list-style-type: none;  
+    position: sticky;   
+    top:0;  
+    margin: 0;  
+    padding: 10px 10px;  
+    overflow: hidden;  
+    background-color: lightgray;  
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+ #nav a {
+     text-decoration: none;
+ }
