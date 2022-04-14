@@ -22,7 +22,8 @@
      color: black;
  }
 
- #nav li .active {
+ #nav li.active {
 
     border-bottom: #eaa700 solid 3px;
+
  }
