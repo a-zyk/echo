@@ -1,17 +1,21 @@
 
+#nav {
+    border-bottom: 1px solid rgb(152, 150, 150);
+
+}
 
 #nav ul {
     display: flex;
  align-items: center;
  justify-content: space-around;
-    list-style-type: none;  
-    position: sticky;   
-    top:0;  
+    list-style-type: none;   
     margin: 0;  
     padding: 10px 10px;  
-    overflow: hidden;   
+    overflow: hidden;  
+    background-color: #fff;  
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+   
 }
  #nav a {
      text-decoration: none;
@@ -19,5 +23,6 @@
  }
 
  #nav li .active {
-border-bottom: #eaa700 2px solid;
+
+    border-bottom: #eaa700 solid 3px;
  }
