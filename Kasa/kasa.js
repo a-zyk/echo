@@ -8,7 +8,7 @@ btn.addEventListener("click", function (e) {
   e.preventDefault();
 
 let echogenicity = form.elements.echogenicity.value;
-
+console.log(echogenicity)
 let ductusWidth = form.elements.ductusWidth.value;
 
 let textArea = form.elements.textArea.value;
