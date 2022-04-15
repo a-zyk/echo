@@ -17,12 +17,14 @@ let pylorusWidth = form.elements.pylorusWidth.value;
 
 let pylorusWallWidth = form.elements.pylorusWallWidth.value;
 
-let peristalsis = form.elements.persitalsis.value;
+let peristalsis = form.elements.peristalsis.value;
 
 let stomachTextArea = form.elements.stomachTextArea.value;
 
+let reportText = "";
+
 if (stomachSize) {
-    reportText += `Skrandys yra ${stomachSize}. `
+    reportText += `Skrandis yra ${stomachSize}. `
 };
 
 if (wallWidth) {
