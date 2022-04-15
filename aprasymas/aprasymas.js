@@ -46,7 +46,7 @@ stomach.innerHTML = stomachText;
 //  zarnynas
 let intestines = document.querySelector(".intestines");
 
-let intestinesText = localStorage.getItem("intestines");
+let intestinesText = localStorage.getItem("zarnynas");
 
 intestines.innerHTML = intestinesText;
 // zarnynas
