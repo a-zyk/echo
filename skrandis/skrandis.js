@@ -21,7 +21,34 @@ let peristalsis = form.elements.persitalsis.value;
 
 let stomachTextArea = form.elements.stomachTextArea.value;
 
-if (stomachSize) 
+if (stomachSize) {
+    reportText += `Skrandys yra ${stomachSize}. `
+};
+
+if (wallWidth) {
+    reportText += `Skrandžio sienelės storis yra ${wallWidth} cm. `
+};
+
+if (stomachWall) {
+    reportText += `Skrandžio sienelės sluoksniai ${stomachWall}.  `
+};
+
+if (pylorusWidth) {
+    reportText += `Skrandžio sienelė pylorus srityje ${pylorusWidth}. `
+};
+
+if (pylorusWallWidth) {
+    reportText += `Sienelės storis pylorus srityje yra ${pylorusWallWidth} cm. `
+}
+
+if (peristalsis) {
+    reportText += `Skrandžio peristaltika pylorys srityje yra ${peristalsis} k/min. `
+};
+
+if (stomachTextArea) {
+    reportText += stomachTextArea
+};
+
 
     text.innerText = reportText;
 
