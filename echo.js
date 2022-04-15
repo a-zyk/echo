@@ -93,6 +93,8 @@ if (textArea) {
 // Left kidney end
 
    text.innerText = reportText;
+
+   localStorage.setItem("inkstai", reportText)
 });
 
 let clear = document.querySelector(".clear");
