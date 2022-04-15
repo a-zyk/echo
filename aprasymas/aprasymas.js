@@ -39,9 +39,8 @@ let stomach = document.querySelector(".stomach");
 
 let stomachText = localStorage.getItem("skrandis");
 
-stomach.innerHtml = stomachText;
+stomach.innerHTML = stomachText;
 
-console.log(stomach.innerHTML)
 // Skrandis
 
 
