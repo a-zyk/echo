@@ -55,3 +55,11 @@ let adrenalsText = localStorage.getItem("prieinksciai");
 
 adrenals.innerHTML = adrenalsText;
 // prieinksciai
+
+// kasa
+
+let pancreas = document.querySelector(".pancreas");
+
+let pancreasText = localStorage.getItem("kasa");
+
+pancreas.innerHTML = pancreasText;
