@@ -18,7 +18,7 @@ kidneys.innerHTML = kidneysText;
 // Inkstai
 
 // Bluznis
-let spleen = document.querySelector(".spleen")
+let spleen = document.querySelector(".spleen");
 
 let spleenText = localStorage.getItem("bluznis");
 
@@ -26,15 +26,21 @@ spleen.innerHTML = spleenText;
 // Bluznis
 
 // Kepenys
-let liver = document.querySelector(".liver")
+let liver = document.querySelector(".liver");
 
 let liverText = localStorage.getItem("kepenys");
 
 liver.innerHTML = liverText;
 // Kepenys
 
+// Skrandis
 
+let stomach = document.querySelector(".stomach");
 
+let stomachText = localStorage.getItem("skrandis");
+
+stomach.innerHtml = stomachText;
+// Skrandis
 
 
 
