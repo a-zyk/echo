@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+
+}
+
+.container {
+    max-width: 700px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: -1px -5px 20px 0px #bebebe57;
+    padding: 1em;
+    gap: 15px;
+    margin-bottom: 10px;
+    margin:auto;
+  }

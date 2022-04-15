@@ -66,6 +66,7 @@ btn.addEventListener("click", function (e) {
   // tulzis end
 
   text.innerText = reportText;
+  
   localStorage.setItem('kepenys', reportText)
 });
 
