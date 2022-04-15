@@ -1,8 +1,5 @@
-
-
-
 // slapimo pusle
-let bladder = document.querySelector(".bladder")
+let bladder = document.querySelector(".bladder");
 
 let bladderText = localStorage.getItem("slapimop");
 
@@ -10,7 +7,7 @@ bladder.innerHTML = bladderText;
 // slapimo pusle
 
 // Inkstai
-let kidneys = document.querySelector(".kidneys")
+let kidneys = document.querySelector(".kidneys");
 
 let kidneysText = localStorage.getItem("inkstai");
 
@@ -51,4 +48,10 @@ let intestinesText = localStorage.getItem("zarnynas");
 intestines.innerHTML = intestinesText;
 // zarnynas
 
+// prieinksciai
+let adrenals = document.querySelector(".adrenals");
 
+let adrenalsText = localStorage.getItem("prieinksciai");
+
+adrenals.innerHTML = adrenalsText;
+// prieinksciai
