@@ -43,5 +43,12 @@ stomach.innerHTML = stomachText;
 
 // Skrandis
 
+//  zarnynas
+let intestines = document.querySelector(".intestines");
+
+let intestinesText = localStorage.getItem("intestines");
+
+intestines.innerHTML = intestinesText;
+// zarnynas
 
 
