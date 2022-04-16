@@ -50,11 +50,11 @@ btn.addEventListener("click", function (e) {
   }
 
   if (lechogenicity) {
-    reportText += `Kariojo prieinksčio žievė aplinkui esantiems riebalams yra ${lechogenicity}. `;
+    reportText += `Kairiojo prieinksčio žievė aplinkui esantiems riebalams yra ${lechogenicity}. `;
   }
 
   if (leftAdrenalLength) {
-    reportText += `Kairiojo prieinksčio ilgis yra ${leftAdrenalLength} cm. `;
+    reportText += `Prieinksčio ilgis yra ${leftAdrenalLength} cm. `;
   }
 
   if (leftAdrenalFrontWidth) {
@@ -62,7 +62,7 @@ btn.addEventListener("click", function (e) {
   }
 
   if (rightAdrenalBackWidth) {
-    reportText += `Galinio poliaus plotis yra ${leftAdrenalBackWidth}`;
+    reportText += `Galinio poliaus plotis yra ${leftAdrenalBackWidth}. `;
   }
 
   if (lTextArea) {
