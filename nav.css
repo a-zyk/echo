@@ -6,8 +6,8 @@
 
 #nav ul {
     display: flex;
- align-items: center;
- justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
     list-style-type: none;   
     margin: 0;  
     padding: 10px 10px;  
@@ -17,13 +17,11 @@
     font-family: 'Poppins', sans-serif;
    
 }
- #nav a {
-     text-decoration: none;
-     color: black;
- }
+#nav a {
+    text-decoration: none;
+    color: black;
+}
 
- #nav li.active {
-
+#nav li.active {
     border-bottom: #eaa700 solid 3px;
-
- }
+}

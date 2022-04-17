@@ -1,4 +1,3 @@
-
 let sectionNames = document.querySelectorAll(".section-name");
 
 sectionNames.forEach(function (sectionName) {
