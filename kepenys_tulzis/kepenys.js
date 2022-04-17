@@ -67,7 +67,7 @@ btn.addEventListener("click", function (e) {
 
   text.innerText = reportText;
   
-  localStorage.setItem('kepenys', reportText)
+  sessionStorage.setItem('kepenys', reportText)
 });
 
 

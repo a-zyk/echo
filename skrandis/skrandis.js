@@ -54,7 +54,7 @@ if (stomachTextArea) {
 
     text.innerText = reportText;
 
-    localStorage.setItem("skrandis", reportText)
+    sessionStorage.setItem("skrandis", reportText)
  });
  
  let clear = document.querySelector(".clear");

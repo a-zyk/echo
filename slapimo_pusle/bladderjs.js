@@ -31,7 +31,7 @@ reportText += textArea;
 text.innerText = reportText;
     }
 
-localStorage.setItem("slapimop", reportText)
+sessionStorage.setItem("slapimop", reportText)
     
 });
 

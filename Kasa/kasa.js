@@ -29,7 +29,7 @@ if (textArea) {
 
   text.innerText = reportText;
 
-  localStorage.setItem("kasa", reportText);
+  sessionStorage.setItem("kasa", reportText);
 });
 
 let clear = document.querySelector(".clear");

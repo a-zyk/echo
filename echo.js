@@ -94,7 +94,7 @@ if (textArea) {
 
    text.innerText = reportText;
 
-   localStorage.setItem("inkstai", reportText)
+   sessionStorage.setItem("inkstai", reportText)
 });
 
 let clear = document.querySelector(".clear");

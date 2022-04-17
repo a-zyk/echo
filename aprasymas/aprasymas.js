@@ -1,7 +1,7 @@
 // slapimo pusle
 let bladder = document.querySelector(".bladder");
 
-let bladderText = localStorage.getItem("slapimop");
+let bladderText = sessionStorage.getItem("slapimop");
 
 bladder.innerHTML = bladderText;
 // slapimo pusle
@@ -9,7 +9,7 @@ bladder.innerHTML = bladderText;
 // Inkstai
 let kidneys = document.querySelector(".kidneys");
 
-let kidneysText = localStorage.getItem("inkstai");
+let kidneysText = sessionStorage.getItem("inkstai");
 
 kidneys.innerHTML = kidneysText;
 // Inkstai
@@ -17,7 +17,7 @@ kidneys.innerHTML = kidneysText;
 // Bluznis
 let spleen = document.querySelector(".spleen");
 
-let spleenText = localStorage.getItem("bluznis");
+let spleenText = sessionStorage.getItem("bluznis");
 
 spleen.innerHTML = spleenText;
 // Bluznis
@@ -25,7 +25,7 @@ spleen.innerHTML = spleenText;
 // Kepenys
 let liver = document.querySelector(".liver");
 
-let liverText = localStorage.getItem("kepenys");
+let liverText = sessionStorage.getItem("kepenys");
 
 liver.innerHTML = liverText;
 // Kepenys
@@ -34,7 +34,7 @@ liver.innerHTML = liverText;
 
 let stomach = document.querySelector(".stomach");
 
-let stomachText = localStorage.getItem("skrandis");
+let stomachText = sessionStorage.getItem("skrandis");
 
 stomach.innerHTML = stomachText;
 
@@ -43,7 +43,7 @@ stomach.innerHTML = stomachText;
 //  zarnynas
 let intestines = document.querySelector(".intestines");
 
-let intestinesText = localStorage.getItem("zarnynas");
+let intestinesText = sessionStorage.getItem("zarnynas");
 
 intestines.innerHTML = intestinesText;
 // zarnynas
@@ -51,7 +51,7 @@ intestines.innerHTML = intestinesText;
 // prieinksciai
 let adrenals = document.querySelector(".adrenals");
 
-let adrenalsText = localStorage.getItem("prieinksciai");
+let adrenalsText = sessionStorage.getItem("prieinksciai");
 
 adrenals.innerHTML = adrenalsText;
 // prieinksciai
@@ -60,6 +60,6 @@ adrenals.innerHTML = adrenalsText;
 
 let pancreas = document.querySelector(".pancreas");
 
-let pancreasText = localStorage.getItem("kasa");
+let pancreasText = sessionStorage.getItem("kasa");
 
 pancreas.innerHTML = pancreasText;

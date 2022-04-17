@@ -74,7 +74,7 @@ btn.addEventListener("click", function (e) {
 
   text.innerText = reportText;
 
-  localStorage.setItem("prieinksciai", reportText);
+  sessionStorage.setItem("prieinksciai", reportText);
 });
 
 let clear = document.querySelector(".clear");

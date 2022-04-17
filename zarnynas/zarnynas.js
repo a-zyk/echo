@@ -59,7 +59,7 @@ btn.addEventListener("click", function (e) {
 
   text.innerText = reportText;
 
-  localStorage.setItem("zarnynas", reportText);
+  sessionStorage.setItem("zarnynas", reportText);
 });
 
 let clear = document.querySelector(".clear");

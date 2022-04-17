@@ -36,7 +36,7 @@ reportText += `Blužnies parenchima yra ${spleen}. `
 
     text.innerText = reportText;
 
-    localStorage.setItem("bluznis", reportText)
+    sessionStorage.setItem("bluznis", reportText)
 });
 
 let clear = document.querySelector(".clear");
