@@ -1,4 +1,4 @@
-fetch('/nav.html')
+fetch('../nav.html')
     .then(resp => resp.text())
     .then(data => {
         const nav = document.getElementById("nav");
