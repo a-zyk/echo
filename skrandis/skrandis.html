@@ -1,237 +1,317 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Skrandis</title>
     <link rel="stylesheet" href="../echo.css" />
     <link rel="stylesheet" href="../nav.css" />
 
     <link
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-     crossorigin="anonymous"/>
-   
-   
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
- </head>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
- <body>
-   <div id="nav"></div>
-<div class="grid">
-<!-- forma -->
-    <div class="main-collumn">
-<form action="" class="form">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-     <!-- skrandzio parametrai start -->
-     
-     <div class="card-container">
-      <h2>Skrandis</h2>
-        <div class="question">
-          <p>Skrandžio prisipildymas yra:</p>
+  <body>
+    <div id="nav"></div>
+    <div class="grid">
+      <!-- forma -->
+      <div class="main-collumn">
+        <form action="" class="form">
+          <!-- skrandzio parametrai start -->
 
-          <label
-            ><input
-              class="form-check-input"
-              type="radio"
-              name="stomachSize"
-              id="empty"
-              value="tusčias"
-            />
-            Tusčias</label
-          >
+          <div class="card-container">
+            <h2>Skrandis</h2>
+            <div class="question">
+              <p>Skrandžio prisipildymas yra:</p>
 
-          <label>
+              <label
+                ><input
+                  class="form-check-input"
+                  type="radio"
+                  name="stomachSize"
+                  id="empty"
+                  value="tusčias"
+                />
+                Tusčias</label
+              >
+
+              <label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="stomachSize"
+                  id="half-full"
+                  value="vidutiniškai prisipildęs"
+                />
+                Vidutinis
+              </label>
+
+              <label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="stomachSize"
+                  id="full"
+                  value="perpildytas"
+                  checked
+                />
+                Perpildytas
+              </label>
+            </div>
+
+            <div class="question">
+              <label for="stomach-wall-width">
+                Skrandžio sienelės storis, cm
+              </label>
+              <input
+                class="form-control mw-15%"
+                type="number"
+                id="stomach-wall-width"
+                name="stomachWallWidth"
+                min="0.0"
+                max="50.0"
+              />
+            </div>
+
+            <div class="question">
+              <p>Skrandžio sienelės sluoksniai:</p>
+
+              <label
+                ><input
+                  class="form-check-input"
+                  type="radio"
+                  name="stomachWall"
+                  id="wall-layer-clear"
+                  value="aiškiai identifikuojami"
+                />
+                Skrandžio sienelės sluoksniai aiškiai identifikuojami</label
+              >
+
+              <label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="stomachWall"
+                  id="wall-layer-unclear"
+                  value="suardyti"
+                />
+                Skrandžio sienelės sluoksnius identifikuoti sudėtinga
+              </label>
+            </div>
+
+            <div class="question">
+              <p>Skrandžio sienelė pylorus srityje:</p>
+
+              <label
+                ><input
+                  class="form-check-input"
+                  type="radio"
+                  name="pylorusWidth"
+                  id="pylorus-width-norm"
+                  value="nesustorėjusi"
+                />
+                Nesustorėjusi</label
+              >
+
+              <label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="pylorusWidth"
+                  id="pylorus-width-thick"
+                  value="sustorėjusi"
+                />
+                Sustorėjusi
+              </label>
+            </div>
+            <div class="small-containers-grid">
+              <div class="question">
+                <label for="pylorus-wall-width">
+                  Skrandžio sienelės ties pylorus storis, cm
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="pylorus-wall-width"
+                  name="pylorusWallWidth"
+                  min="0.0"
+                  max="50.0"
+                />
+              </div>
+
+              <div class="question">
+                <label for="peristalsis"
+                  >Skrandžio peristaltika pylorus srityje, k/min
+                </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="peristalsis"
+                  name="peristalsis"
+                  min="0"
+                  max="50"
+                />
+              </div>
+            </div>
+
+            <div class="question">
+              <label for="stomach-text-area">
+                Kiti pakitimai
+                <textarea
+                  name="stomachTextArea"
+                  id="stomach-text-area"
+                  class="form-control"
+                  placeholder="Kiti pakitimai:masės, svetimkūniai..."
+                  rows="4"
+                  cols="40"
+                ></textarea>
+              </label>
+            </div>
+          </div>
+
+          <div class="bothBtns">
             <input
-              class="form-check-input"
-              type="radio"
-              name="stomachSize"
-              id="half-full"
-              value="vidutiniškai prisipildęs"
+              type="submit"
+              name="submit"
+              value="Submit"
+              class="btnSubmit"
             />
-            Vidutinis
-          </label>
+            <button class="clear" type="reset">Clear</button>
+          </div>
+        </form>
+        <p class="text"></p>
+      </div>
+      <!-- forma end -->
 
-          <label>
-            <input
-              class="form-check-input"
-              type="radio"
-              name="stomachSize"
-              id="full"
-              value="perpildytas"
-              checked
-            />
-            Perpildytas
-          </label>
+      <!-- speros  -->
+
+      <div class="second-collumn">
+        <div class="section card-container">
+          <div class="section-name">
+            <h2>Normalus skrandis</h2>
+          </div>
+          <div class="section-text">
+            <img src="image-4-stomach-content.jpg" alt="normal-stomach" />
+            <p>
+              Šuns skrandis yra lokalizuotas ties krūtinkaulio kardinės ataugos
+              pabaiga. Katės skrandis lokalizuotas labiau kairėje pusėje,
+              prievartis (pylorus) lokalizuotas ties centru. Dažniausiai matoma
+              tik artimesnė sienelė, dėl dujų reverbacijoss artefakto. Skrandžio
+              sienelę sudaro 5 sluoksniai: hiperechoišk seroza, hipoechoiškas
+              raumeninis sluoksnis, hiperechoiška pogleivinė, hipoechoiška
+              gleivinė, hiperechoiškas spindžio-gleivinės sandūra. Vertinamas
+              sienelės storis, atskirų sluoksnių echogeniškumas ir storis,
+              peristaltika, turinys bei turinio echogeniškumas. Taip pat
+              vertinami šalia esantys limfmazgiai, galima aptikti laisvus
+              skysčius.
+            </p>
+          </div>
         </div>
 
-        <div class="question">
-          <label for="stomach-wall-width">
-            Skrandžio sienelės storis, cm
-          </label>
-          <input
-            class="form-control mw-15%"
-            type="number"
-            id="stomach-wall-width"
-            name="stomachWallWidth"
-            min="0.0"
-            max="50.0"
-          />
+        <div class="section card-container">
+          <div class="section-name">
+            <h2>Skrandžio opos</h2>
+          </div>
+          <div class="section-text">
+            <img src="opa_suo_sustorejusisienele.png" alt="skrandžio opa" />
+            <p>
+              Skradžio opos echoskopijos metu vizualizuojamos kaip sienelės
+              sustorėjimas, su krateriu, kurio viduje gali būti nedielių dujų
+              burbuliukų, normalios sienelės suardymas bei skrandžio hipotonija.
+              Tokie patys radiniai gali būti dėl skrandžio neoplazijos,
+              nekrozavusios skrandžio neoplazijos, taigi galutinė diagnozė
+              nustatoma gastroskopijos metu.
+            </p>
+          </div>
         </div>
 
-        <div class="question">
-          <p>Skrandžio sienelės sluoksniai:</p>
-
-          <label
-            ><input
-              class="form-check-input"
-              type="radio"
-              name="stomachWall"
-              id="wall-layer-clear"
-              value="aiškiai identifikuojami"
-            />
-            Skrandžio sienelės sluoksniai aiškiai identifikuojami</label
-          >
-
-          <label>
-            <input
-              class="form-check-input"
-              type="radio"
-              name="stomachWall"
-              id="wall-layer-unclear"
-              value="suardyti"
-            />
-            Skrandžio sienelės sluoksnius identifikuoti sudėtinga
-          </label>
+        <div class="section card-container">
+          <div class="section-name">
+            <h2>Prievarčio hiperplazija</h2>
+          </div>
+          <div class="section-text">
+            <img src="pyloric_hiper_suo_sust_musc.png" alt="hiperplazija" />
+            <p>
+              Prievarčio hipertrofija (piliorinė gastropatija) yra stebima pas
+              mažų veislių, vyresnio amžiaus šunis. Predosponuotos veislės: lasa
+              apso, ši tzu, miniatiūriniai pudeliai. Dažniausiai pasireiškia
+              vidutiniškai 8.8 metų šunims, amžius svyruoja nuo 3 iki 15 metų.
+              Dvigubai dažniau pasireiškia patinams. Požymiai: vėmimas kelios
+              valandos po ėdimo, dažniausiai be tulžies, svorio kritimas, pilvo
+              padidėjimas, dėl dujų besikaupiančių skrandyje. Echoskopijos metu
+              stebimas raumeninio sluoksnio sustorėjimas prievarčio (pylorus )
+              srityje.
+            </p>
+          </div>
         </div>
 
-        <div class="question">
-          <p>Skrandžio sienelė pylorus srityje:</p>
+        <div class="section card-container">
+          <div class="section-name">
+            <h2>Neoplazija</h2>
+          </div>
+          <div class="section-text">
+            <div class="subsection">
+              <div class="subsection-name">
+                <h3>Leiomioma</h3>
+              </div>
+              <div class="subsection-text">
+                <figure>
+                  <img src="leiomioma.png" alt="hyperplasia" />
+                  <figcaption>Šuo, leiomioma.</figcaption>
+                </figure>
+                <p>
+                  Leiomioma dažnas labai senų šunų skrandžio vėžys, antras pagal
+                  dažnumą po adenokacinomos. Vidutiniškai nustatoma 15 metų
+                  šunims, predisponuoti bigliai. Dažnai matoma taip lokalizuotas
+                  polipas įskrandžio ar gastroezofaginės jungties srityje.
+                  Dažnai išopėja.
+                </p>
+              </div>
+            </div>
 
-          <label
-            ><input
-              class="form-check-input"
-              type="radio"
-              name="pylorusWidth"
-              id="pylorus-width-norm"
-              value="nesustorėjusi"
-            />
-            Nesustorėjusi</label
-          >
+            <div class="subsection">
+              <div class="subsection-name">
+                <h3>Adenocarcinoma</h3>
+              </div>
+              <div class="subsection-text">
+                <figure>
+                  <img src="suo_karcinoma_pseudolayers.png" alt="karcinoma" />
+                  <figcaption>^uo, adenokarcinoma pseudosluoksniai.</figcaption>
+                </figure>
 
-          <label>
-            <input
-              class="form-check-input"
-              type="radio"
-              name="pylorusWidth"
-              id="pylorus-width-thick"
-              value="sustorėjusi"
-            />
-            Sustorėjusi
-          </label>
-        </div>
-<div class="small-containers-grid">
-        <div class="question">
-          <label for="pylorus-wall-width">
-            Skrandžio sienelės ties pylorus storis, cm
-          </label>
-          <input
-            class="form-control mw-15%"
-            type="number"
-            id="pylorus-wall-width"
-            name="pylorusWallWidth"
-            min="0.0"
-            max="50.0"
-          />
-        </div>
-
-        <div class="question">
-          <label for="peristalsis"
-            >Skrandžio peristaltika pylorus srityje, k/min
-          </label>
-          <input
-            class="form-control mw-15%"
-            type="number"
-            id="peristalsis"
-            name="peristalsis"
-            min="0"
-            max="50"
-          />
+                <p>
+                  Skrandžio adenocarcinoma yra reta katėms, bet šunims sudaro
+                  42-72% visų nustatomų skrandžio vėžių. Amžiaus vidurkis 8
+                  metai, bet pasireiškia ir jaunesniems nei 5 metai. Dvigubai
+                  dažniau nustatoma patinams. Predisponuotos veislės: belgų
+                  aviganiai, šiukščiaplaukiai koliai. Ultragarsu stebimas
+                  sienelės sustorėjimas, sluoksnų suardymas. Dažniausiai
+                  sienelės išorinis ir vidinis sluoksnis hipoechoiškas, su
+                  hiperechoiška centrine zona. Gali būti išopėjimo,
+                  limfadenopatija, auglys dažniausiai randamas mažojoje
+                  skrandžio kreivėje bei prievarčio prieangio (antrum) zonoje.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-        <div class="question">
-          <label for="stomach-text-area">
-            Kiti pakitimai
-            <textarea
-              name="stomachTextArea"
-              id="stomach-text-area"
-              class="form-control"
-              placeholder="Kiti pakitimai:masės, svetimkūniai..."
-              rows="4"
-              cols="40"
-            ></textarea>
-          </label>
-        </div>
-        
-      
-</div>
-
-<div class="bothBtns">
-  <input
-    type="submit"
-    name="submit"
-    value="Submit"
-    class="btnSubmit"
-  />
-  <button class="clear" type="reset">Clear</button>
-</div>
-
-</form>
-<p class="text"></p>
+      <!-- speros end -->
     </div>
-<!-- forma end -->
-
-<!-- speros  -->
-
-<div class="second-collumn">
-
-    <div class="section card-container">
-        <div class="section-name">
-          <h2>Normalus skrandis</h2>
-        </div>
-        <div class="section-text">
-          <img src="normalkidney.png" alt="normal-kidney" />
-          <p>
-            Kačių inkstai yra dažniausiai ovalios formos apie 3 – 4,5 cm.
-            Nekastruotų patinų inkstai linkę būti didesni. Į senatvę kačių
-            inkstai mažėja. Šerdis yra hipoechoiška žievei. Žievės šerdies
-            riba turi būti gerai išreikšta. (corticomedullary distinction.)
-            Kortikomedularinėje dalyje yra arkinės kraujagyslės, kurios gali
-            mesti akustinį šešėlį ir turi būti diferencijuojamos nuo
-            kalcifikacijos spalviniu dopleriu. Žievė yra
-            hipoechoiška/izoechoiška kepenims ir hipoechoiška blužniai. Žievė
-            gali būti hiperechoiška kepenims dėl didesnio kiekio riebalų, kas
-            yra norma katėms. Inksto kapsulė turi būti lygi hiperechogeniška
-            linija. Geldelė gali būti vizualizuojama skersiniame pjūvyje ir
-            gali padidėti dėl intraveninės skysčių terapijos ar diuretikų
-            naudojimo.Aplink geldelę yra inksto sinusas, kuris vizualizuojama
-            kaip hiperechoiška struktūra. Pas nutukusias kates itin ryškus.
-          </p>
-        </div>
-      </div>
-
-</div>
-<!-- speros end -->
-
-
-</div>
-<script src="../sidebar.js"></script>
-<script src="../nav.js"></script>
-<script src="skrandis.js"></script>
- </body>
+    <script src="../sidebar.js"></script>
+    <script src="../nav.js"></script>
+    <script src="skrandis.js"></script>
+  </body>
 </html>
