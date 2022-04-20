@@ -28,123 +28,206 @@
     <div class="grid">
       <!-- forma -->
       <div class="main-collumn">
-         
         <form action="" class="form">
           <div class="form-flex">
             <div class="card-container">
               <h2>Kasa</h2>
-          <div class="question">
-            <p>Kasa aplink esantiems riebalams yra</p>
+              <div class="question">
+                <p>Kasa aplink esantiems riebalams yra</p>
 
-            <label>
-              <input
-                class="form-check-input"
-                type="radio"
-                name="echogenicity"
-                id="isoechoic"
-                value="izoechoiška"
-                checked
-              />
-              Izoechogeniška
-            </label>
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="echogenicity"
+                    id="isoechoic"
+                    value="izoechoiška"
+                    checked
+                  />
+                  Izoechogeniška
+                </label>
 
-            <label
-              ><input
-                class="form-check-input"
-                type="radio"
-                name="echogenicity"
-                id="hyperechoic"
-                value="hiperechoiška"
-              />
-              Hiperechogeniška</label
-            >
+                <label
+                  ><input
+                    class="form-check-input"
+                    type="radio"
+                    name="echogenicity"
+                    id="hyperechoic"
+                    value="hiperechoiška"
+                  />
+                  Hiperechogeniška</label
+                >
 
-            <label>
-              <input
-                class="form-check-input"
-                type="radio"
-                name="echogenicity"
-                id="hipoechoic"
-                value="hipoechoiška"
-              />
-              Hipoechogeniška
-            </label>
+                <label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="echogenicity"
+                    id="hipoechoic"
+                    value="hipoechoiška"
+                  />
+                  Hipoechogeniška
+                </label>
+              </div>
+
+              <div class="question">
+                <label for="ductus-width">Kasos latako skersmuo, cm </label>
+                <input
+                  class="form-control mw-15%"
+                  type="number"
+                  id="ductus-width"
+                  name="ductusWidth"
+                  min="0.0"
+                  max="50.0"
+                />
+              </div>
+
+              <div class="question">
+                <label for="text-area">
+                  Kiti pakitimai
+                  <textarea
+                    name="textArea"
+                    id="text-area"
+                    class="form-control"
+                    placeholder="Kiti pakitimai: masės, cistos, abscesai, kalcifikatai"
+                    rows="4"
+                    cols="40"
+                  ></textarea>
+                </label>
+              </div>
+            </div>
           </div>
 
-          <div class="question">
-            <label for="ductus-width">Kasos latako skersmuo, cm </label>
+          <div class="bothBtns">
             <input
-              class="form-control mw-15%"
-              type="number"
-              id="ductus-width"
-              name="ductusWidth"
-              min="0.0"
-              max="50.0"
+              type="submit"
+              name="submit"
+              value="Submit"
+              class="btnSubmit"
             />
+            <button class="clear" type="reset">Clear</button>
           </div>
-
-          <div class="question">
-            <label for="text-area">
-              Kiti pakitimai
-              <textarea
-                name="textArea"
-                id="text-area"
-                class="form-control"
-                placeholder="Kiti pakitimai: masės, cistos, abscesai, kalcifikatai"
-                rows="4"
-                cols="40"
-              ></textarea>
-            </label>
-          </div>
-        
-</div>
-</div>
-
-<div class="bothBtns">
-  <input
-    type="submit"
-    name="submit"
-    value="Submit"
-    class="btnSubmit"
-  />
-  <button class="clear" type="reset">Clear</button>
-</div>
         </form>
-     
 
-      <div class="text"></div>
-       </div>
+        <div class="text"></div>
+      </div>
       <!-- forma end -->
 
       <!-- speros  -->
 
       <div class="second-collumn">
-
         <div class="section card-container">
-            <div class="section-name">
-              <h2>Normalus inkstas</h2>
+          <div class="section-name">
+            <h2>Senatviniai pakitimai</h2>
+          </div>
+          <div class="section-text">
+            <div class="subsection">
+              <div class="subsection-name">
+                <h3>Kasos mazgelinė hiperplazija</h3>
+              </div>
+              <div class="subsection-text">
+                <figure>
+                  <img
+                    src="nodular_hyperplasia_dog_chronic pancr.png"
+                    alt="hyperplasia"
+                  />
+                  <figcaption>
+                    Šuo, mazgelinė hiperplazija dėl lėtinio pankreatito.
+                  </figcaption>
+                </figure>
+                <p>
+                  Senatvinis pakitimas dažnesnis katėms. Stebimos daugybiniai
+                  hipoechoiški mazgeliai 0.3 – 1cm diametro. Gali atrodyti kaip
+                  cistos. Gali atrodyt panašiai į insulinoma. Dažniausiai katės
+                  neturi jokių požymių. Gali būti susiję su persirgtu
+                  pankreatitu
+                </p>
+              </div>
             </div>
-            <div class="section-text">
-              <img src="normalkidney.png" alt="normal-kidney" />
-              <p>
-                Kačių inkstai yra dažniausiai ovalios formos apie 3 – 4,5 cm.
-                Nekastruotų patinų inkstai linkę būti didesni. Į senatvę kačių
-                inkstai mažėja. Šerdis yra hipoechoiška žievei. Žievės šerdies
-                riba turi būti gerai išreikšta. (corticomedullary distinction.)
-                Kortikomedularinėje dalyje yra arkinės kraujagyslės, kurios gali
-                mesti akustinį šešėlį ir turi būti diferencijuojamos nuo
-                kalcifikacijos spalviniu dopleriu. Žievė yra
-                hipoechoiška/izoechoiška kepenims ir hipoechoiška blužniai. Žievė
-                gali būti hiperechoiška kepenims dėl didesnio kiekio riebalų, kas
-                yra norma katėms. Inksto kapsulė turi būti lygi hiperechogeniška
-                linija. Geldelė gali būti vizualizuojama skersiniame pjūvyje ir
-                gali padidėti dėl intraveninės skysčių terapijos ar diuretikų
-                naudojimo.Aplink geldelę yra inksto sinusas, kuris vizualizuojama
-                kaip hiperechoiška struktūra. Pas nutukusias kates itin ryškus.
-              </p>
+
+            <div class="subsection">
+              <div class="subsection-name">
+                <h3>Kasos latako išsiplėtimas</h3>
+              </div>
+              <div class="subsection-text">
+                <figure>
+                  <img
+                    src="pd_dilatacija, 2,2mm_norma.jpg"
+                    alt="ductus dilatation"
+                  />
+                  <figcaption>Sena katė, kasos latako dilatacija</figcaption>
+                </figure>
+
+                <p>
+                  Senyvo amžiaus katėms kasos latako skersmuo yra norma iki
+                  0.25cm. Dažniausiai nebūna jokių klinikinių požymių. Kasos
+                  latakas gali plėsti ir dėl letinio ir ūmaus pankratito.
+                </p>
+              </div>
             </div>
           </div>
+        </div>
 
+        <div class="section card-container">
+          <div class="section-name">
+            <h2>Pankreatitas</h2>
+          </div>
+          <div class="section-text">
+            <figure>
+              <img src="pankreatitas_suo.png" alt="etilenotoksikoze" />
+              <figcaption>
+                Šuo, pankreatitas.P- kasa, matomas hiperechoiškas riebalinis
+                audinys, sustorėjusi ir edemiška dvylikapirštė.
+              </figcaption>
+            </figure>
+            <p>
+              Dėl ūmaus pankreatito kasa padidėja, tampa hipoechoiška ją
+              supančiam riebaliniui audiniui.Šalia esanti dvylikapirštė žarna
+              gali būti koruguota, atoniška. Kasos kraštai suapvalėja arba
+              kapsulė tampa nelygi. Vystosi riebalinio audinio steatitas, jis
+              tampa hiperechoiškas gali būti laisvų skysčių.
+            </p>
+          </div>
+        </div>
+
+        <div class="section card-container">
+          <div class="section-name">
+            <h2>Kasos cistos ir abscesai</h2>
+          </div>
+          <div class="section-text">
+            <figure>
+              <img src="kasos_abscesas_kate.png" alt="abscesas" />
+              <figcaption>Katė, kasos abscesas.</figcaption>
+            </figure>
+            <p>
+              Kasos cistos ir abscesai yra nedažna pankreatito komplikacija.
+              Manoma, kad dėl uždegimo pratrūksta kasos latakas, kasos ar
+              aplinkiniuose audiniuose susiformuoja fibrotinė kapsulė pripildyta
+              kasos išskiriamo skysčio ir fermentų. Diferencijacijai atliekama
+              citologija, histopatologija.
+            </p>
+          </div>
+        </div>
+
+        <div class="section card-container">
+          <div class="section-name">
+            <h2>Neoplazija</h2>
+          </div>
+          <div class="section-text">
+            <figure>
+              <img src="kasos_karcinoma_suo.png" alt="carcinoma" />
+              <figcaption>Šuo, kasos karcinoma.</figcaption>
+            </figure>
+            <p>
+              Kasos endokrininio audinio neoplazijos (glukagonomos, insulinomos
+              ir gastrinomos) yra nedažnas reiškinys. Šunims dažniausiai
+              pasitaiko insulinomos. Matomos kaip masės kasos skiltyse. Kasos
+              adenocarcinoma retas vėžys, šunims gali būti nustatomas kaip masė
+              ar difuziški pakitimai, katėms dažniausiai difuziškai apimantis
+              visą kasą.
+            </p>
+          </div>
+        </div>
       </div>
       <!-- speros end -->
     </div>
