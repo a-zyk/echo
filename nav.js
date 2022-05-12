@@ -4,8 +4,9 @@ fetch('../nav.html')
         const nav = document.getElementById("nav");
         nav.innerHTML = data;
 
-        const currentUrl = document.location.pathname;
-        const activeLink = nav.querySelector(`a[href*="${currentUrl}"]`)
+        const activeUrlParts = document.location.pathname.split('/');
+        const activeUrl = activeUrlParts[activeUrlParts.length - 1];
+        const activeLink = nav.querySelector(`a[href*="${activeUrl}"]`)
         
         if (activeLink) {
             activeLink.parentNode.classList.add('active')
