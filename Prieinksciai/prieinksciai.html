@@ -11,6 +11,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,7 +37,7 @@
             <div class="card-container">
               <h2>Dešinys prieinkstis</h2>
               <div class="question">
-                <p>Aplinkui esantiems riebalams prieinksčio žievė</p>
+                <p>Aplinkui esantiems riebalams prieinksčio žievė <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus prieinksčio žievė jį supantiems riebalams yra hipoechoiška."></i></p>
 
                 <label>
                   <input
@@ -72,7 +76,7 @@
 
               <div class="question">
                 <label for="right-adrenal-length"
-                  >Dešinio prienksčio ilgis, cm
+                  >Dešinio prienksčio ilgis, cm <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus prieinksčio ilgis katėms yra 1-1,1cm , šunims: 1-5cm."></i>
                 </label>
                 <input
                   class="form-control mw-15%"
@@ -88,6 +92,7 @@
                 <div class="question">
                   <label for="right-adrenal-front-width"
                     >Dešinio prienksčio priekinio poliaus plotis, cm
+                    <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus prieinksčio plotis katėms yra 0,35-0,45cm , šunims: 0,6-0,8cm."></i>
                   </label>
                   <input
                     class="form-control mw-15%"
@@ -102,6 +107,7 @@
                 <div class="question">
                   <label for="right-adrenal-back-width"
                     >Dešinio prienksčio galinio poliaus plotis, cm
+                    <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus prieinksčio plotis katėms yra 0,35-0,45cm , šunims: 0,6-0,8cm."></i>
                   </label>
                   <input
                     class="form-control mw-15%"
@@ -132,9 +138,13 @@
             <div class="card-container">
               <h2>Kairys prieinkstis</h2>
               <div class="question">
-                <p>Aplinkui esantiems riebalams prieinksčio žievė</p>
+               
 
                 <label>
+                 <p> Aplinkui esantiems riebalams prieinksčio žievė
+                  <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus prieinksčio žievė jį supantiems riebalams yra hipoechoiška."></i>
+                </p>
+               
                   <input
                     class="form-check-input"
                     type="radio"
@@ -172,6 +182,7 @@
               <div class="question">
                 <label for="left-adrenal-length"
                   >Kairio prienksčio ilgis, cm
+                  <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus prieinksčio ilgis katėms yra 1-1,1cm , šunims: 1-5cm."></i>
                 </label>
                 <input
                   class="form-control mw-15%"
@@ -187,6 +198,7 @@
                 <div class="question">
                   <label for="left-adrenal-front-width"
                     >Kairio prienksčio priekinio poliaus plotis, cm
+                    <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus prieinksčio ilgis katėms yra 0,35-0,45cm , šunims: 0,6-0,8cm."></i>
                   </label>
                   <input
                     class="form-control mw-15%"
@@ -200,7 +212,8 @@
 
                 <div class="question">
                   <label for="left-adrenal-back-width"
-                    >Kairio prienksčio priekinio poliaus plotis, cm
+                    >Kairio prienksčio galinio poliaus plotis, cm
+                    <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus prieinksčio ilgis katėms yra 0,35-0,45cm , šunims: 0,6-0,8cm."></i>
                   </label>
                   <input
                     class="form-control mw-15%"
@@ -299,9 +312,7 @@
           <div class="section-text">
             <figure>
               <img src="pheochromocitoma.png" alt="pheochromocytoma" />
-              <figcaption>
-                Feochromocitoma, šuo.
-              </figcaption>
+              <figcaption>Feochromocitoma, šuo.</figcaption>
             </figure>
             <p>
               Ultragarsinio tyrimo aptinkamų prieinksčių darinių vaizdas yra
@@ -322,5 +333,11 @@
     <script src="../sidebar.js"></script>
     <script src="../nav.js"></script>
     <script src="prieinksciai.js"></script>
+    <script src="../tooltips.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -62,7 +62,7 @@ btn.addEventListener("click", function (e) {
   }
 
   if (rightAdrenalBackWidth) {
-    reportText += `Galinio poliaus plotis yra ${leftAdrenalBackWidth}. `;
+    reportText += `Galinio poliaus plotis yra ${leftAdrenalBackWidth} cm. `;
   }
 
   if (lTextArea) {
