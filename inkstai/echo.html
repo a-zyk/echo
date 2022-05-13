@@ -11,6 +11,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,7 +42,8 @@
               <h2>Dešinys inkstas</h2>
               <!--size Radiobuttons  -->
               <div class="question">
-                <p>Inksto žievė kepenims:</p>
+                <p>Inksto žievė kepenims  <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normlaus dešinio inksto žievė yra hipoechoiška/izoechoiška kepenims."></i>
+                </p>
 
                 <label
                   ><input
@@ -76,13 +78,14 @@
                   />
                   Izoechogeniška
                 </label>
+
               </div>
               <!-- size Radiobuttons end-->
 
               <!-- Number -->
                 <div class="small-containers-grid">
                 <div class="question">
-                  <label for="kidney-length">Inksto ilgis, cm </label>
+                  <label for="kidney-length">Inksto ilgis, cm <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus katės inksto ilgis 3,20 - 4,12 cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."></i></label>
                   <input
                     class="form-control mw-15%"
                     type="number"
@@ -94,7 +97,7 @@
                 </div>
 
                 <div class="question">
-                  <label for="kidney-width"> Inksto plotis, cm </label>
+                  <label for="kidney-width"> Inksto plotis, cm <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus katės inksto plotis 2,23 - 2,83 cm."></i> </label>
                   <input
                     class="form-control mw-15%"
                     type="number"
@@ -110,7 +113,8 @@
               <!-- Pelvis -->
               <div class="small-containers-grid">
                 <div class="question">
-                  <p>Inksto geldelė:</p>
+                  <p>Inksto geldelė <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Skersiniame pjūvyje normalus geldelės plotis iki 0,2cm. Plotis >1.3cm būdingas obstrukcijai."></i>
+                  </p>
 
                   <label
                     ><input
@@ -133,6 +137,7 @@
                     />
                     Neprasiplėtusi
                   </label>
+
                 </div>
                 <div class="question">
                   <label for="pelvis-width">Geldelės plotis, cm </label>
@@ -174,7 +179,8 @@
 
               <!--size Radiobuttons  -->
               <div class="question">
-                <p>Inksto žievė blužniai:</p>
+                <p>Inksto žievė blužniai <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normlaus kairio inksto žievė yra hipoechoiška blužniai."></i>
+                </p>
 
                 <label
                   ><input
@@ -209,13 +215,14 @@
                   />
                   Izoechogeniška
                 </label>
+
               </div>
               <!-- size Radiobuttons end-->
 
               <!-- Number -->
               <div class="small-containers-grid">
                 <div class="question">
-                  <label for="kidney-length">Inksto ilgis, cm </label>
+                  <label for="kidney-length">Inksto ilgis, cm <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus katės inksto ilgis 3,20 - 4,12 cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."></i></label>
                   <input
                     class="form-control mw-15%"
                     type="number"
@@ -227,7 +234,7 @@
                 </div>
 
                 <div class="question">
-                  <label for="kidney-width"> Inksto plotis, cm </label>
+                  <label for="kidney-width"> Inksto plotis, cm <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Normalaus katės inksto plotis 2,23 - 2,83 cm."></i></label>
                   <input
                     class="form-control mw-15%"
                     type="number"
@@ -243,7 +250,8 @@
               <!-- Pelvis -->
               <div class="small-containers-grid">
                 <div class="question">
-                  <p>Inksto geldelė:</p>
+                  <p>Inksto geldelė  <i class="bi bi-patch-question" data-bs-toggle="tooltip" data-bs-placement="right" title="Skersiniame pjūvyje normalus geldelės plotis iki 0,2cm. Plotis >1.3cm būdingas obstrukcijai."></i>
+                  </p>
 
                   <label
                     ><input
@@ -266,6 +274,7 @@
                     />
                     Neprasiplėtusi
                   </label>
+
                 </div>
                 <div class="question">
                   <label for="pelvis-width">Geldelės plotis, cm </label>
@@ -278,6 +287,7 @@
                     max="50.0"
                   />
                 </div>
+
               </div>
               <!-- pelvis end -->
               <!-- Text area -->
@@ -478,4 +488,7 @@
   <script src="../echo.js"></script>
   <script src="../sidebar.js"></script>
   <script src="../nav.js"></script>
+  <script src="../tooltips.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+
 </html>

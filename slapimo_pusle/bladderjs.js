@@ -42,4 +42,3 @@ clear.addEventListener("click", function (e) {
   text.innerText = "";
 });
 
-
