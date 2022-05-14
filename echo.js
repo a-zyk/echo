@@ -24,7 +24,7 @@ btn.addEventListener("click", function (e) {
   let reportText = "";
 
   if (rechogenicity) {
-    reportText += ` Dešnio inksto žievė kepenims yra ${rechogenicity}.`;
+    reportText += ` Dešinio inksto žievė kepenims yra ${rechogenicity}.`;
   }
 
   if (rLength && rWidth) {
